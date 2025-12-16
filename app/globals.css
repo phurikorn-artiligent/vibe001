@@ -45,77 +45,165 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+
+  /* Claude Opus Inspired Theme - Warm & Sophisticated */
+  --background: oklch(0.97 0.01 60);
+  /* Warm cream/beige */
+  --foreground: oklch(0.25 0.02 30);
+  /* Deep warm brown */
+  --card: oklch(0.99 0.005 60);
+  /* Lighter cream for cards */
+  --card-foreground: oklch(0.25 0.02 30);
+  /* Deep brown text */
+  --popover: oklch(0.99 0.005 60);
+  --popover-foreground: oklch(0.25 0.02 30);
+
+  /* Coral/Orange primary - Claude's signature */
+  --primary: oklch(0.65 0.18 35);
+  /* Warm coral */
+  --primary-foreground: oklch(1 0 0);
+  /* White text */
+
+  /* Warm brown secondary */
+  --secondary: oklch(0.35 0.03 35);
+  /* Rich brown */
+  --secondary-foreground: oklch(0.99 0.005 60);
+  /* Cream text */
+
+  /* Muted warm tones */
+  --muted: oklch(0.93 0.01 60);
+  /* Soft beige */
+  --muted-foreground: oklch(0.45 0.02 30);
+  /* Medium brown */
+
+  /* Accent - Deeper coral */
+  --accent: oklch(0.60 0.20 30);
+  /* Deep coral */
+  --accent-foreground: oklch(1 0 0);
+  /* White text */
+
+  --destructive: oklch(0.55 0.22 25);
+  /* Warm red */
+  --border: oklch(0.88 0.01 60);
+  /* Soft beige border */
+  --input: oklch(0.88 0.01 60);
+  /* Soft beige input */
+  --ring: oklch(0.65 0.18 35);
+  /* Coral ring */
+
+  /* Chart colors - Warm earth tones */
+  --chart-1: oklch(0.65 0.18 35);
+  /* Coral */
+  --chart-2: oklch(0.55 0.15 45);
+  /* Terracotta */
+  --chart-3: oklch(0.50 0.12 55);
+  /* Warm ochre */
+  --chart-4: oklch(0.45 0.10 25);
+  /* Deep brown */
+  --chart-5: oklch(0.70 0.08 70);
+  /* Soft gold */
+
+  /* Sidebar - Clean cream */
+  --sidebar: oklch(0.99 0.005 60);
+  /* Light cream */
+  --sidebar-foreground: oklch(0.25 0.02 30);
+  /* Deep brown */
+  --sidebar-primary: oklch(0.65 0.18 35);
+  /* Coral */
+  --sidebar-primary-foreground: oklch(1 0 0);
+  /* White */
+  --sidebar-accent: oklch(0.95 0.01 60);
+  /* Soft beige */
+  --sidebar-accent-foreground: oklch(0.25 0.02 30);
+  /* Deep brown */
+  --sidebar-border: oklch(0.90 0.01 60);
+  /* Beige border */
+  --sidebar-ring: oklch(0.65 0.18 35);
+  /* Coral */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Claude Opus Dark Mode - Sophisticated warm dark */
+  --background: oklch(0.15 0.02 30);
+  /* Deep warm charcoal */
+  --foreground: oklch(0.95 0.01 60);
+  /* Warm off-white */
+  --card: oklch(0.20 0.02 30);
+  /* Elevated warm dark */
+  --card-foreground: oklch(0.95 0.01 60);
+  /* Warm off-white */
+  --popover: oklch(0.20 0.02 30);
+  --popover-foreground: oklch(0.95 0.01 60);
+
+  /* Bright coral for dark mode */
+  --primary: oklch(0.70 0.20 35);
+  /* Bright warm coral */
+  --primary-foreground: oklch(0.15 0.02 30);
+  /* Dark text */
+
+  /* Light warm secondary */
+  --secondary: oklch(0.85 0.02 60);
+  /* Light beige */
+  --secondary-foreground: oklch(0.20 0.02 30);
+  /* Dark text */
+
+  /* Muted dark warm tones */
+  --muted: oklch(0.25 0.02 30);
+  /* Dark warm gray */
+  --muted-foreground: oklch(0.75 0.01 60);
+  /* Light beige */
+
+  /* Bright accent */
+  --accent: oklch(0.72 0.22 30);
+  /* Bright coral */
+  --accent-foreground: oklch(0.15 0.02 30);
+  /* Dark text */
+
+  --destructive: oklch(0.65 0.24 25);
+  /* Bright warm red */
+  --border: oklch(0.30 0.02 30);
+  /* Subtle warm border */
+  --input: oklch(0.30 0.02 30);
+  /* Dark warm input */
+  --ring: oklch(0.70 0.20 35);
+  /* Bright coral ring */
+
+  /* Chart colors - Warm glowing tones */
+  --chart-1: oklch(0.70 0.20 35);
+  /* Bright coral */
+  --chart-2: oklch(0.65 0.18 45);
+  /* Warm terracotta */
+  --chart-3: oklch(0.75 0.15 55);
+  /* Golden ochre */
+  --chart-4: oklch(0.80 0.12 65);
+  /* Soft gold */
+  --chart-5: oklch(0.60 0.15 25);
+  /* Deep warm brown */
+
+  /* Sidebar - Rich dark warm */
+  --sidebar: oklch(0.18 0.02 30);
+  /* Deep warm charcoal */
+  --sidebar-foreground: oklch(0.95 0.01 60);
+  /* Warm off-white */
+  --sidebar-primary: oklch(0.70 0.20 35);
+  /* Bright coral */
+  --sidebar-primary-foreground: oklch(0.15 0.02 30);
+  /* Dark text */
+  --sidebar-accent: oklch(0.25 0.02 30);
+  /* Dark warm gray */
+  --sidebar-accent-foreground: oklch(0.95 0.01 60);
+  /* Warm off-white */
+  --sidebar-border: oklch(0.28 0.02 30);
+  /* Subtle border */
+  --sidebar-ring: oklch(0.70 0.20 35);
+  /* Bright coral */
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
